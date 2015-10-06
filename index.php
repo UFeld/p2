@@ -12,7 +12,7 @@ ini_set('display_errors', 1);
 
 <title>XKCD Password Generator App</title>
 
-<?php require 'Applogic.php'; ?>
+<?php require 'AppLogic.php'; ?>
 
 <link rel="stylesheet" type="text/css" href="./formatting.css"  />
 
@@ -47,19 +47,22 @@ ini_set('display_errors', 1);
 <input type='submit' value='Get your XKCD Password!'><br>
 </form>
 
+
 <!--Final Checks-->
 <?php
 
 //echo $_POST['numberOfWords'];
 
 //print_r($_POST);
-/*
+
 If (isset($_POST['numberOfWords'])){
 
-  echo $_POST['numberOfWords'];
+ echo $_POST['numberOfWords'];
 
 };
-*/
+
+print_r($_POST);
+
 
 ?>
 

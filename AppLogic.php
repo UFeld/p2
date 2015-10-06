@@ -3,13 +3,13 @@
 <body>
 -->
 <?php
-
+/*
 If (isset($_POST['numberOfWords'])){
 
   echo $_POST['numberOfWords'];
 
 };
-
+*/
 ?>
 <!--
 </body>
