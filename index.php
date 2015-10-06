@@ -36,32 +36,32 @@ ini_set('display_errors', 1);
 <!--How many words to use -->
 
 <br>
-
-<form>  
-Number of words?<br>
-<input type="text" name="numberOfWords">
-</form>
-
-<!--Checkbox for number -->
-<!--Error check for overstuffing-->
 <br>
-
-<form>
-<input type="checkbox" name="number" value="number" checked>Yes, include a number
-</form>
-
+<form method='POST' action='AppLogic.php'>
+<input type='text' name='numberOfWords'>Number of words?<br>
 <br>
-
-<!--Checkbox for special character -->
-<!--Error check for overstuffing-->
-
-<form>
-<input type="checkbox" name="number" value="specialCharacter" checked>Yes, include a special character
+<input type='checkbox' name='numberPW' value='number' unchecked>Yes, include a number<br>
+<br>
+<input type='checkbox' name='numberSPChar' value='specialCharacter'  unchecked>Yes, include a special character<br>
+<br>
+<input type='submit' value='Get your XKCD Password!'><br>
 </form>
 
-<!--Submit Button -->
 <!--Final Checks-->
+<?php
 
+//echo $_POST['numberOfWords'];
+
+//print_r($_POST);
+/*
+If (isset($_POST['numberOfWords'])){
+
+  echo $_POST['numberOfWords'];
+
+};
+*/
+
+?>
 
 </div>
 </body>
