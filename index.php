@@ -23,48 +23,34 @@ ini_set('display_errors', 1);
 <div class = "typedFormatting">
 <!--Desciption of App -->
 
-<h1>Ipsum here be text!</h1>
+<h1>Last XKCD Password Generator!</h1>
 
-<h2>WordsWordsWords</h2>
+<h2>This application was built as the 2nd Project submission for the Harvard Extension School's "CSCI E-15 Dynamic Web Applications" Fall semester class.<br><br><br>
+    This project focused on building a web application that acted as a password generator, similar to one featured in the comic XKCD.  Users have the ability to specify the number of words they want as part of their password, and if they want a number and special character included as well.<br><br><br>
+    <a href="http://xkcd.com/">XKCD</a> is an internet comic strip created by Randall Munroe starting in 2005.<br><br><br>
+
+</h2>
 
 <!--XKCD comic image -->
 
  <img src="http://imgs.xkcd.com/comics/password_strength.png" alt="XKCD.com">
 
-<!--Password generated is displayed-->
 
-<!--How many words to use -->
+<!--Form Code -->
 
 <br>
 <br>
-<form method='POST' action='AppLogic.php'>
+<form method='POST' action='index.php'>
 <input type='text' name='numberOfWords'>Number of words?<br>
 <br>
 <input type='checkbox' name='numberPW' value='number' unchecked>Yes, include a number<br>
 <br>
 <input type='checkbox' name='numberSPChar' value='specialCharacter'  unchecked>Yes, include a special character<br>
 <br>
-<input type='submit' value='Get your XKCD Password!'><br>
+<input type='submit' value='Get your XKCD Password!' ><br>
 </form>
 
 
-<!--Final Checks-->
-<?php
-
-//echo $_POST['numberOfWords'];
-
-//print_r($_POST);
-
-If (isset($_POST['numberOfWords'])){
-
- echo $_POST['numberOfWords'];
-
-};
-
-print_r($_POST);
-
-
-?>
 
 </div>
 </body>
